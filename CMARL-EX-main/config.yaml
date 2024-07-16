@@ -1,0 +1,16 @@
+environment:
+  mode: "evaluate"
+  learn_policy: "maddpg"
+  max_cycles: 192
+  houses_per_node: 1
+  climate_zone: 1
+  hourly_timesteps: 4
+
+train:
+  epochs: 180
+  show_evaluate_epoch: 100
+  evaluate_epoch: 2
+
+
+
+
