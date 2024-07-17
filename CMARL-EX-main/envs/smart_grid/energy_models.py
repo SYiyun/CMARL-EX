@@ -104,7 +104,6 @@ class Building:
         """
         self.start_time=0
         self.weather = weather
-        self.Carbon = carbon
         self.hourly_timesteps = hourly_timesteps
 
         # create a Unique Building ID
@@ -506,7 +505,7 @@ class Building:
         low = -1 * np.ones(num_states)
         high = np.ones(num_states)
 
-        self.observation_space = spaces.Box(low=low, high=high, dtype=np.float32)
+        self.observation_space = spaces.Box(low=low, high=high)
         return
 
     def set_action_space(self):
@@ -536,7 +535,7 @@ class Building:
                     a_low.append(-1.0)
                     a_high.append(1.0)
 
-        self.action_space = spaces.Box(low=np.array(a_low), high=np.array(a_high), dtype=np.float32)
+        self.action_space = spaces.Box(low=np.array(a_low), high=np.array(a_high))
         return
 
     def set_storage_electrical(self, action=0):

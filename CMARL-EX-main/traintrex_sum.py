@@ -29,9 +29,9 @@ parser.add_argument('--env-name', default="grid", metavar='G',
                     help='name of the environment to run')
 parser.add_argument('--seed', type=int, default=543, metavar='N',
                     help='random seed (default: 1)')
-parser.add_argument('--batch-size', type=int, default=16, metavar='N',
+parser.add_argument('--batch-size', type=int, default=32, metavar='N',
                     help='random seed (default: 1)')
-parser.add_argument('--log-interval', type=int, default=1, metavar='N',
+parser.add_argument('--log-interval', type=int, default=10, metavar='N',
                     help='interval between training status logs (default: 10)')
 parser.add_argument('--save-interval', type=int, default=10, metavar='N',
                     help='interval between training status logs (default: 10)')
