@@ -1,7 +1,7 @@
 # CMARL-EX
 
 ## Environment
-This project constructs an energy management environment based on the CityLearn framework, with code modifications available here. (https://github.com/intelligent-environments-lab/CityLearn)
+This project constructs an energy management environment based on the CityLearn framework, with code modifications available here. (https://github.com/intelligent-environments-lab/CityLearn). 
 CityLearn is an open source OpenAI Gym environment for the implementation of Multi-Agent Reinforcement Learning (RL) for building energy coordination and demand response in cities. 
 
 To generate building models, try the following code to randomly generate an smart building system:
