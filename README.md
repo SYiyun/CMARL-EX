@@ -5,10 +5,13 @@ This project constructs an energy management environment based on the CityLearn 
 CityLearn is an open source OpenAI Gym environment for the implementation of Multi-Agent Reinforcement Learning (RL) for building energy coordination and demand response in cities. 
 
 To generate building models, try the following code to randomly generate an smart building system:
+
 `
 cd CMARL-EX-main
+`
 
-python generate_env.py 
+`
+python generate_env.py
 `
 
 
@@ -24,9 +27,11 @@ Each demonstration file is a pickle file of a dict `{'traj':[traj_1, traj_2, ...
 
 
 ### Reward functions construction
-`
-cd CMARL-EX-main
 
+`
+cd CMARL-EX-main`
+
+`
 python traintrex_sum.py --train_demo_files model_save/multi_model_1.pt model_save/multi_model_2.pt model_save/multi_model_3.pt model_save/multi_model_4.pt model_save/multi_model_5.pt model_save/multi_model_6.pt --test_demo_files model_save/multi_model_1.pt model_save/multi_model_3.pt model_save/multi_model_5.pt model_save/multi_model_7.pt --batch-size 16 --log-interval 10 --num_epochs 1000 --mode state_action --save-interval 10 --output_model_path log/rewardnet0.pth --traj_len 24
 `
 
@@ -34,14 +39,19 @@ python traintrex_sum.py --train_demo_files model_save/multi_model_1.pt model_sav
 
 `
 cd CMARL-EX-main
+`
 
+`
 python safe_train_grid_ex.py 
 `
 
 ## Testing
+
 `
 cd CMARL-EX-main
+`
 
+`
 python safe_testing.py 
 `
 
