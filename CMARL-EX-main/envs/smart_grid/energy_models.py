@@ -279,7 +279,7 @@ class Building:
         car, car_raw, pwr, pwr1 = self.get_carbonreward()
 
         self.all_devs += [dev]
-        reward = -0.75 * (10 * dev) ** 2 - abs(5 * pl_loss) - 0.9*car
+        reward = -0.75 * (10 * dev) ** 2 - abs(5 * pl_loss) - 0.8*pwr
         return reward
 
 
